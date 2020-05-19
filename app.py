@@ -7,7 +7,6 @@ app = Flask(__name__)
 
 
 
-
 @app.route('/')
 def index():
 
@@ -19,6 +18,7 @@ def home():
 
 @app.route('/home_two')
 def home_two():
+    # update 
     return render_template('hometwo.html')
 
 if __name__ == '__main__':
