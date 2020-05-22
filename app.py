@@ -19,7 +19,7 @@ def contact():
     return render_template('contact.html')
 
     
-@app.route('/poems')
+@app.route('/poem')
 def poem():
     return render_template('poems.html')
 
