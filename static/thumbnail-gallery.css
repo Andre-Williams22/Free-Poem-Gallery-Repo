@@ -3,7 +3,6 @@ body {
     min-height: 100vh;
     font: normal 16px sans-serif;
 }
-
 .gallery-container h1 {
     text-align: center;
     margin-top: 70px;
@@ -61,3 +60,9 @@ body {
 .baguetteBox-button {
     background-color: transparent !important;
 }
+
+
+/* Extra code for jumbotron  */
+
+
+  
