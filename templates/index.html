@@ -26,13 +26,14 @@
         <li class="active"><a href="{{url_for('index')}}">Home</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{url_for('about')}}">About</a></li>
-        <li><a href="{{url_for('poem')}}">Poems</a></li>
-        <li><a href="{{url_for('contact')}}">Contact</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('poem') }}">Poems</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
+{% block content %}
 <div class="container gallery-container">
 
     <h1>Lois Jones' Poem Gallery</h1>
@@ -43,7 +44,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <a class="lightbox" href=" {{ url_for('poem')}}">
+                    <a class="lightbox" href="{{ url_for('poem')}}">
                         <img src="../static/images/park.jpg" alt="Park">
                     </a>
                     <div class="caption">
@@ -115,5 +116,7 @@
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
+
+{% endblock %}
 </body>
 </html>
