@@ -8,16 +8,16 @@ app = Flask(__name__, template_folder='templates')
 def index():
     return render_template('index.html')
 
-@app.route('/about/', methods=['GET', 'POST'])
+@app.route('/about', methods=['GET', 'POST'])
 def about():
     return render_template('About.html')
 
-@app.route('/contact/', methods=['GET', 'POST'])
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
     return render_template('Contact.html')
 
     
-@app.route('/poem/', methods=['GET', 'POST'])
+@app.route('/poem', methods=['GET', 'POST'])
 def poem():
     return render_template('Poems.html')
 
