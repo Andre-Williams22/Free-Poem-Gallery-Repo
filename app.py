@@ -1,13 +1,11 @@
 from flask import Flask, render_template, redirect, request, url_for 
 
 
-
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-
     return render_template('index.html')
 
 @app.route('/about')
@@ -19,7 +17,7 @@ def contact():
     return render_template('contact.html')
 
     
-@app.route('/poems')
+@app.route('/poem')
 def poem():
     return render_template('poems.html')
 
