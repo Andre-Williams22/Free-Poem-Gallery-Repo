@@ -10,16 +10,16 @@ def index():
 
 @app.route('/about', methods=['GET', 'POST'])
 def about():
-    return render_template('About.html')
+    return render_template('about.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('Contact.html')
+    return render_template('contact.html')
 
     
 @app.route('/poem', methods=['GET', 'POST'])
 def poem():
-    return render_template('Poems.html')
+    return render_template('poems.html')
 
 
 if __name__ == '__main__':
