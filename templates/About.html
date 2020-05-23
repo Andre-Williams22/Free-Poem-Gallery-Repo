@@ -19,67 +19,25 @@
                 text-align: center;
             }
 
-<<<<<<< HEAD
-            /*Remove the navbar's default margin-bottom and rounded borders */ 
-            .navbar {
-                margin-bottom: 0;
-                border-radius: 0;
-            }
-
-            /* Add a gray background color and some padding to the footer */
-            footer {
-                background-color: #f2f2f2;
-                padding: 25px;
-            }
-
-        </style>
-    </head>
-    
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="#">Portfolio</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <img src = "static/images/placement-photo.jpg" alt = "about Me photo" width= "128" height = "128">
-=======
         </style>
     </head>
     <body>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
                 <a class="navbar-brand" href="#">Portfolio</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{url_for('about')}}">About</a></li>
-                    <li><a href="{{url_for('poem')}}">Poems</a></li>
-                    <li><a href="{{url_for('contact')}}">Contact</a></li>
-                </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{url_for('about')}}">About</a></li>
+                        <li><a href="{{url_for('poem')}}">Poems</a></li>
+                        <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="{{url_for('index')}}">Home</a></li>
                 </ul>
@@ -87,7 +45,6 @@
             </div>
         </nav>
         <img src = "../static/images/placement-photo.jpg" alt = "about Me photo" width= "128" height = "128">
->>>>>>> f55eb82e2eca2c5dddd14f67d93df0a34908570e
 
         <p> Instagram is a notoriously difficult platform on which to write a good bio. Similar to Twitter,<br>
             <br>you simply don't have room for a professional bio that includes everything about you. And because<br>
